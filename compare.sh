@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DATE="20121111"
+DATE="20121125"
 echo "Stats for $DATE"
 
 echo "Number of entries in recent changes edits (including deletions/blocks):"
