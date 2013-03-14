@@ -12,5 +12,5 @@ echo "WV: `wc -l < wv$DATE`"
 echo "WT: `wc -l < wt$DATE`"
 
 echo "Number of article edits:"
-echo "WV: `grep 'diff | hist' wv$DATE | wc -l`"
-echo "WT: `grep 'diff | hist' wt$DATE | wc -l`"
+echo "WV: `cat wv$DATE | grep -v "Welcome to" | grep -v "User creation log" | grep -v "Block log" | grep -v "Deletion log" | grep -v "Reverted edits" | wc -l`"
+echo "WT: `cat wt$DATE | grep -v "Welcome to" | grep -v "User creation log" | grep -v "Block log" | grep -v "Deletion log" | grep -v "Reverted edits" | wc -l`"
